@@ -1,0 +1,50 @@
+@import 'mixins';
+$color: 
+	(
+		red: red,
+		black: #000000,
+		white: #ffffff,
+		gray: #f0f5f5,
+	);
+
+$size:
+	(
+		content: 13px,
+		titlePost: 17px,
+		titleSecion: 22px,
+	);
+
+/*.color{
+	color: map-get($color, red);
+}*/
+
+
+.of-cv{
+	width: 100%;
+	object-fit: cover;
+}
+
+/*text line*/
+
+.tl-1{
+	@include textLine(1);
+}
+.tl-2{
+	@include textLine(2);
+}
+.tl-3{
+	@include textLine(3);
+}
+.tl-4{
+	@include textLine(4);
+}
+.tl-5{
+	@include textLine(5);
+}
+.tl-6{
+	@include textLine(6);
+}
+
+.ta-justify{
+	text-align: justify;
+}

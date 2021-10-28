@@ -1,0 +1,87 @@
+.page--title{
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.content{
+	-ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    height: 100vh;
+    padding-bottom: 40px;
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+	    width: 6px;
+	    background-color: #F5F5F5;
+	}
+	&::-webkit-scrollbar-thumb {
+	    background-color: #000000;
+	}
+    	.home-page__products{
+    		@include flexbox;
+    		flex-wrap: wrap;
+    		padding-left: 20px;
+    			._products-item{
+					padding: 20px;
+    				-ms-flex: 0 0 25%;
+				    flex: 0 0 25%;
+				    max-width: 25%;
+				    	div{
+				    		box-shadow: -2px 2px 8px 2px rgba(0,0,0,0.75);
+							-webkit-box-shadow: -2px 2px 8px 2px rgba(0,0,0,0.75);
+							-moz-box-shadow: -2px 2px 8px 2px rgba(0,0,0,0.75);
+							border-radius: 10px;
+							overflow: hidden;
+							position: relative;
+								article{
+									@include centerAbsolute(center);
+									width: 100%;
+									text-align: center;
+									color: #ffffff;
+									font-size: 20px;
+									text-shadow: -1px -1px 2px rgba(0, 0, 0,0.6);
+									opacity: 0;
+									z-index: 3;
+									@include transition(all, 0.3s, ease);
+								}
+								section{
+									width: 100%;
+									height: 270px;
+									img{
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+
+									}
+								}
+								&:before{
+									content: "";
+									position: absolute;
+									top: 0;
+									left: 0;
+									background: rgba(0, 0, 0, 0.5);
+									width: 100%;
+									height: 100%;
+									opacity: 0;
+									z-index: 2;
+									@include transition(all, 0.2s, ease);
+								}
+								&:hover{
+									article{
+										opacity: 1;
+									}
+									img{
+										@include transition(all, 0.2s, ease);
+										@include transform(scale(1.1));
+									}
+									&:before{
+										opacity: 1;
+									}
+
+								}
+				    	}
+    			}
+    	}
+}
