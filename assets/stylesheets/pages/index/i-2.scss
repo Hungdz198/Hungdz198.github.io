@@ -42,7 +42,7 @@
     .blog-card {
         display: flex;
         flex-direction: row;
-        background: #fff;
+        background: #ffffff;
         box-shadow: 0 0.1875rem 1.5rem rgba(0, 0, 0, 0.2);
         border-radius: 0.375rem;
         overflow: hidden;
@@ -62,52 +62,80 @@
         grid-template-rows: 1fr;
     }
 
-    .card-link {
-        position: relative;
-        display: block;
-        color: inherit;
-        text-decoration: none;
-    }
-    .card-link:hover .post-title {
-        transition: color 0.3s ease;
-        color: #e04f62;
-    }
-    .card-link:hover .post-image {
-        transition: opacity 0.3s ease;
-        opacity: 0.9;
-    }
 
     .article-details {
-        padding: 1.5rem;
-    }
-
-    .post-category {
-        display: inline-block;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: 0.0625rem;
-        margin: 0 0 0.75rem 0;
-        padding: 0 0 0.25rem 0;
-        border-bottom: 0.125rem solid #ebebeb;
+        padding: 1rem;
+        @include flexbox;
+        flex-wrap: wrap;
     }
 
     .post-title {
         transition: color 0.3s ease;
         font-size: 1.125rem;
-        line-height: 1.4;
+        line-height: 1.4rem;
         color: #121212;
         font-weight: 700;
-        margin: 0 0 0.5rem 0;
+        width: 100%;
     }
-
-    .post-author {
+    .post-edit, 
+    .post-id,
+    .post-author,
+    .post-category,
+    .post-status{
+        width: 50%;
+        line-height: 1.4rem;
+        margin: 0.5rem 0 0 0;
+    }
+    .post-edit {
+        width: 100%;
         font-size: 0.875rem;
         line-height: 1;
-        margin: 1.125rem 0 0 0;
+        margin: 0.5rem 0 0 0;
         padding: 1.1rem 0 0 0;
         border-top: 0.0625rem solid #ebebeb;
+        @include flexbox;
+        @include justify-content(flex-end);
+    }
+    .post__link--edit{
+        padding: 10px 20px;
+        border: 1px solid #3ae374;
+        margin-right: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #3ae374;
+        color: #ffffff;
+        box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        -moz-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        &:hover{
+            background: #ffffff;
+            color: #3ae374;
+        }
+        &:active{
+            box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+            -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+            -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+        }
+    }
+    .post__link--delete{
+        padding: 10px 20px;
+        border: 1px solid #ff4d4d;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #ffffff;
+        background: #ff4d4d;
+        box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        -moz-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        &:hover{
+            background: #ffffff;
+            color: #ff4d4d;
+        }
+        &:active{
+            box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+            -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+            -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+        }
     }
     @media (max-width: 40rem) {
         .blog-card {
@@ -117,4 +145,16 @@
         }
     }
 
+}
+@media only screen and (max-width:767px){
+    .cardCustom20--content.card{
+        .post-edit, 
+        .post-id,
+        .post-author,
+        .post-category,
+        .post-status{
+            width: 100%;
+            margin: 0;
+        }
+    }
 }
