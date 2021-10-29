@@ -12,14 +12,15 @@
 
 <body>
     <div class="container-fluid">
+        <!-- PHẦN MENU -->
         <nav>
             <a id="menu-toggle" href="#" class="button">
-              <span class="sr">Toggle Navigation</span>
-              <span class="menu-bar bar1"></span>
-              <span class="menu-bar bar2"></span>
-              <span class="menu-bar bar3"></span>
+                <span class="sr">Toggle Navigation</span>
+                <span class="menu-bar bar1"></span>
+                <span class="menu-bar bar2"></span>
+                <span class="menu-bar bar3"></span>
             </a>
-          </nav>
+        </nav>
         <div class="_menu">
             <div class="menu__logo">
                 <i class="fas fa-home"></i>
@@ -27,13 +28,13 @@
             <section class="menu__list">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="index.html">
                             <article>
                                 <section>
-                                    <i class="fas fa-bars"></i>
+                                    <i class="fas fa-book"></i>
                                 </section>
                                 <span>
-                                    Trang chủ
+                                    Quản lý
                                 </span>
                             </article>
                         </a>
@@ -54,34 +55,10 @@
                         <a href="">
                             <article>
                                 <section>
-                                    <i class="fas fa-book"></i>
-                                </section>
-                                <span>
-                                    Quản lý sách
-                                </span>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <article>
-                                <section>
                                     <i class="fas fa-handshake-slash"></i>
                                 </section>
                                 <span>
                                     Mượn trả
-                                </span>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <article>
-                                <section>
-                                    <i class="fas fa-warehouse"></i>
-                                </section>
-                                <span>
-                                    Kho
                                 </span>
                             </article>
                         </a>
@@ -101,8 +78,29 @@
                 </ul>
             </section>
         </div>
+        <!-- ***************************************************************************************************************** -->
+        <!-- PHẦN NỘI DUNG -->
         <div class="content">
             <div class="home-page__products">
+                <div class="home-page__filter">
+                    <section>
+                        <button type="button" class="active">
+                            A - Z
+                        </button>
+                        <button type="button">
+                            Z - A
+                        </button>
+                        <button type="button">
+                            Thể loại
+                        </button>
+                        <button type="button">
+                            Năm XB
+                        </button>
+                        <button type="button">
+                            Tác giả
+                        </button>
+                    </section>
+                </div>
                 <div class="result__item">
                     <div class="cardCustom20--content card">
                         <article class="blog-card">
@@ -110,17 +108,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -133,17 +131,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -156,17 +154,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -179,17 +177,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -202,17 +200,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -225,17 +223,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -248,17 +246,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -271,17 +269,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -294,17 +292,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -317,17 +315,17 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -340,23 +338,98 @@
                             <div class="article-details">
                                 <h3 class="post-title">Tên sách</h3>
                                 <p class="post-category"><b>Thể loại:</b> hành động</p>
-                                <p class="post-publish"><b>xuất bản:</b> 2020 - 2021</p>
+                                <p class="post-publish"><b>xuất bản:</b> 2012</p>
                                 <p class="post-id"><b>mã sách:</b> ms123</p>
                                 <p class="post-author"><b>tác giả:</b> abc</p>
                                 <p class="post-status"><b>trang thái:</b> đã mượn</p>
                                 <div class="post-edit">
-                                    <section class="post__link--edit">
+                                    <button type="button" class="post__link--edit">
                                         Chỉnh sửa
-                                    </section>
-                                    <section class="post__link--delete">
+                                    </button>
+                                    <button type="button" class="post__link--delete">
                                         Xóa
-                                    </section>
+                                    </button>
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- ********************************************************************************************************************* -->
+        <!-- PHẦN CHỈNH SỬA SÁCH -->
+        <div class="edit_card">
+            <form action="">
+                <h2>Chỉnh sửa sách</h2>
+                <div class="_card--form">
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="ten-sach" placeholder="Tên sách">
+                            <section>
+                                Tên sách
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="the-loai" placeholder="hành động">
+                            <section>
+                                thể loại
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="nam-xuat-ban" placeholder="2012">
+                            <section>
+                                năm xuất bản
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="ma-sach" placeholder="ms123">
+                            <section>
+                                mã sách
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="tac-gia" placeholder="Raizel">
+                            <section>
+                                tác giả
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-file">
+                        <section>
+                                Hình ảnh
+                        </section>
+                        <article>
+                            <input type="file" name="avatar" accept="image/*">
+                        </article>
+                    </div>
+                    <div class="input-checkbox">
+                        <section>
+                                trạng thái
+                        </section>
+                        <article>
+                            <label for="check1"><input type="radio" checked id="check1" name="check"> Đã mượn</label>
+                            <label for="check2"><input type="radio" id="check2" name="check"> chưa mượn</label>
+                        </article>
+                    </div>
+                    
+                    <div class="button_edit">
+                        <div class="button--close">
+                            <button type="button" class="close-edit-card">Thoát</button>
+                        </div>
+                        <div class="button--submit">
+                            <button type="submit">Xác nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <script src="assets/javascripts/main.js"></script>

@@ -1,4 +1,5 @@
-var menu = document.getElementById('menu-toggle'),
+document.addEventListener("DOMContentLoaded",function(){
+  var menu = document.getElementById('menu-toggle'),
       toggled = false;
 
     menu.addEventListener( 'click', function() {
@@ -12,3 +13,18 @@ var menu = document.getElementById('menu-toggle'),
         document.querySelector("._menu").classList.remove("_menu--show");
       }
     }, false );
+
+    const editItems = document.querySelectorAll(".post__link--edit");
+
+    editItems.forEach(function(item) {
+      item.addEventListener('click', () => {
+        document.querySelector(".edit_card").classList.add("edit_card--show");
+      });
+    });
+    
+    document.querySelector(".button--close > button").addEventListener('click', () => {
+      document.querySelector(".edit_card").classList.remove("edit_card--show");
+    });
+
+
+},false);

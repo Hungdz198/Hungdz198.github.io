@@ -147,6 +147,22 @@
 
 }
 @media only screen and (max-width:767px){
+    .search--form {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 100%;
+        >form {
+            margin: auto;
+            >label {
+                &:nth-child(1) {
+                    input {
+                        padding: 5px 10px;
+                        width: 85vw;
+                    }
+                }
+            }
+        }
+    }
     .cardCustom20--content.card{
         .post-edit, 
         .post-id,
