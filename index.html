@@ -82,6 +82,9 @@
         <!-- PHẦN NỘI DUNG -->
         <div class="content">
             <div class="home-page__products">
+                <div class="create-book">
+                    <button type="button">Thêm sách</button>
+                </div>
                 <div class="home-page__filter">
                     <section>
                         <button type="button" class="active">
@@ -356,6 +359,8 @@
                 </div>
             </div>
         </div>
+
+
         <!-- ********************************************************************************************************************* -->
         <!-- PHẦN CHỈNH SỬA SÁCH -->
         <div class="edit_card">
@@ -417,6 +422,83 @@
                         <article>
                             <label for="check1"><input type="radio" checked id="check1" name="check"> Đã mượn</label>
                             <label for="check2"><input type="radio" id="check2" name="check"> chưa mượn</label>
+                        </article>
+                    </div>
+                    
+                    <div class="button_edit">
+                        <div class="button--close">
+                            <button type="button" class="close-edit-card">Thoát</button>
+                        </div>
+                        <div class="button--submit">
+                            <button type="submit">Xác nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- ********************************************************************************************************************* -->
+        <!-- PHẦN THÊM MỚI SÁCH -->
+        <div class="create_card">
+            <form action="">
+                <h2>Thêm mới sách</h2>
+                <div class="_card--form">
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="ten-sach" placeholder="Tên sách">
+                            <section>
+                                Tên sách
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="the-loai" placeholder="hành động">
+                            <section>
+                                thể loại
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="nam-xuat-ban" placeholder="2012">
+                            <section>
+                                năm xuất bản
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="ma-sach" placeholder="ms123">
+                            <section>
+                                mã sách
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="tac-gia" placeholder="Raizel">
+                            <section>
+                                tác giả
+                            </section>
+                        </label>
+                    </div>
+                    <div class="input-file">
+                        <section>
+                                Hình ảnh
+                        </section>
+                        <article>
+                            <input type="file" name="avatar" accept="image/*">
+                        </article>
+                    </div>
+                    <div class="input-checkbox">
+                        <section>
+                                trạng thái
+                        </section>
+                        <article>
+                            <label for="status"><input type="radio" checked id="status" name="status"> chưa mượn</label>
                         </article>
                     </div>
                     

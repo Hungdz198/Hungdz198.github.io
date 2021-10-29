@@ -22,8 +22,22 @@ document.addEventListener("DOMContentLoaded",function(){
       });
     });
     
-    document.querySelector(".button--close > button").addEventListener('click', () => {
+    document.querySelector(".edit_card .button--close > button").addEventListener('click', () => {
       document.querySelector(".edit_card").classList.remove("edit_card--show");
+    });
+
+      document.querySelector(".create-book > button").addEventListener('click', () => {
+        document.querySelector(".create_card").classList.add("edit_card--show");
+      });
+    document.querySelector(".create_card .button--close > button").addEventListener('click', () => {
+      document.querySelector(".create_card").classList.remove("edit_card--show");
+    });
+
+    document.querySelector(".btn--borrow_book > button").addEventListener('click', () => {
+      document.querySelector(".create-borrow_book").classList.add("edit_card--show");
+    });
+    document.querySelector(".create-borrow_book .button--close > button").addEventListener('click', () => {
+      document.querySelector(".create-borrow_book").classList.remove("edit_card--show");
     });
 
 

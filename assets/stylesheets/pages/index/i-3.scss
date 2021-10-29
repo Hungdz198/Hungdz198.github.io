@@ -1,0 +1,96 @@
+.result_user{
+	padding: 30px;
+	h2{
+		font-weight: 600;
+		text-transform: uppercase;	
+		margin-bottom: 20px;
+		border-bottom: 2px solid #b2b2b2;
+		display: inline-block;
+	}
+	.cardCustom20--content.card{
+	    width: 98%;
+	}
+}
+.user--info{
+	margin-bottom: 30px;
+	> ul{
+		@include flexbox;
+		@include justify-content(space-between);
+		flex-wrap: wrap;
+		> li{
+			width: 48%;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #b2b2b2;
+			> article{
+				font-weight: 600;
+				margin-bottom: 3px;
+			}
+			> section{
+				margin-left: 20px;
+				// text-align: right;
+			}
+		}
+	}
+	.btn--borrow_book{
+		width: 60%;
+		margin: 30px auto;
+	}
+	.btn{
+		width: 100%;
+    	padding: 5px 0;
+    	border-radius: 5px;
+    	outline: none;
+	    box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        -moz-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+        border: 1px solid #1289A7;
+	    background: #1289A7;
+	    color: #ffffff;
+	    &:hover{
+	    	color: #1289A7;
+	    	background: none;	
+	    }
+        &:active{
+            box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+            -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+            -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+        }
+	}
+}
+.bts_books{
+    padding: 10px 20px;
+    border: 1px solid #ff4d4d;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    background: #ff4d4d;
+    box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+    &:hover{
+        background: #ffffff;
+        color: #ff4d4d;
+    }
+    &:active{
+        box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+        -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+        -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+    }
+}
+
+
+@media only screen and (max-width:767px){
+	.user--info{
+		margin-bottom: 15px;
+		> ul{
+			> li{
+				width: 90%;
+				margin-bottom: 10px;
+			}
+		}
+		.btn--borrow_book{
+			width: 90%;
+			margin: 10px auto;
+		}
+	}
+}

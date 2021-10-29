@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css'>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- PHẦN MENU -->
+        <nav>
+            <a id="menu-toggle" href="#" class="button">
+                <span class="sr">Toggle Navigation</span>
+                <span class="menu-bar bar1"></span>
+                <span class="menu-bar bar2"></span>
+                <span class="menu-bar bar3"></span>
+            </a>
+        </nav>
+        <div class="_menu">
+            <div class="menu__logo">
+                <i class="fas fa-home"></i>
+            </div>
+            <section class="menu__list">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <article>
+                                <section>
+                                    <i class="fas fa-book"></i>
+                                </section>
+                                <span>
+                                    Quản lý
+                                </span>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tim-kiem.html">
+                            <article>
+                                <section>
+                                    <i class="fas fa-search"></i>
+                                </section>
+                                <span>
+                                    Tìm kiếm
+                                </span>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <article>
+                                <section>
+                                    <i class="fas fa-handshake-slash"></i>
+                                </section>
+                                <span>
+                                    Mượn trả
+                                </span>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <article>
+                                <section>
+                                    <i class="fas fa-user-check"></i>
+                                </section>
+                                <span>
+                                    Độc giả
+                                </span>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- ***************************************************************************************************************** -->
+        <!-- PHẦN NỘI DUNG -->
+        <div class="content">
+            <div class="search--form">
+                <form>
+                    <label>
+                        <input type="text" placeholder="Nhập mã số...">
+                    </label>
+                    <label>
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </label>
+                </form>
+            </div>
+            <div class="result_user">
+                <section class="user--info">
+                    <h2>Thông tin độc giả</h2>
+                    <ul>
+                        <li>
+                            <article>
+                                Tên độc giả:
+                            </article>
+                            <section>
+                               <span>- &nbsp;</span> Nguyễn Văn A
+                            </section>
+                        </li>
+                        <li>
+                            <article>
+                                Mã độc giả:
+                            </article>
+                            <section>
+                                <span>- &nbsp;</span>
+                                ms123
+                            </section>
+                        </li>
+                        <li>
+                            <article>
+                                Lớp:
+                            </article>
+                            <section>
+                                <span>- &nbsp;</span>
+                                ab123
+                            </section>
+                        </li>
+                        <li>
+                            <article>
+                                Giới tính:
+                            </article>
+                            <section>
+                                <span>- &nbsp;</span>
+                                Nam
+                            </section>
+                        </li>
+                        <li>
+                            <article>
+                                Ngày sinh:
+                            </article>
+                            <section>
+                                <span>- &nbsp;</span>
+                                12-12-1990
+                            </section>
+                        </li>
+                        <li>
+                            <article>
+                                Số điện thoại:
+                            </article>
+                            <section>
+                                <span>- &nbsp;</span>
+                                0123456789
+                            </section>
+                        </li>
+                        <li>
+                            <article>
+                                Số phiếu mượn
+                            </article>
+                            <section>
+                                <span>- &nbsp;</span>
+                                5
+                            </section>
+                        </li>
+                    </ul>
+                    <div class="btn--borrow_book">
+                        <button type="button" class="btn">
+                            Mượn sách
+                        </button>
+                    </div>
+                </section>
+                <section class="user--borrow_books">
+                    <h2>Sách đã mượn</h2>
+                    <div class="result--key">
+                        <div class="result__item">
+                            <div class="cardCustom20--content card">
+                                <article class="blog-card">
+                                    <img class="post-image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/pike-place.jpg" />
+                                    <div class="article-details">
+                                        <h3 class="post-title">Tên sách</h3>
+                                        <p class="post-category"><b>Thể loại:</b> hành động</p>
+                                        <p class="post-publish"><b>xuất bản:</b> 2012</p>
+                                        <p class="post-id"><b>mã sách:</b> ms123</p>
+                                        <p class="post-author"><b>tác giả:</b> abc</p>
+                                        <p class="post-time"><b>Ngày mượn:</b> 12-12-2020</p>
+                                        <p class="post-admin"><b>Thủ thư:</b> Nguyễn Thị B</p>
+                                        <div class="post-edit">
+                                            <button type="button" class="bts_books">
+                                                Trả sách
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+        <!-- ********************************************************************************************************************* -->
+        <!-- PHẦN MƯỢN SÁCH -->
+        <div class="create-borrow_book">
+            <form action="">
+                <h2>Mượn sách</h2>
+                <div class="_card--form">
+                    <div class="input-contact">
+                        <label>
+                            <input type="text" name="name" placeholder="Tên sách hoặc mã sách">
+                            <section>
+                                Tên sách hoặc mã sách
+                            </section>
+                        </label>
+                    </div>
+                    
+                    <div class="button_edit">
+                        <div class="button--close">
+                            <button type="button" class="close-edit-card">Thoát</button>
+                        </div>
+                        <div class="button--submit">
+                            <button type="submit">Xác nhận</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/javascripts/main.js"></script>
+</body>
+
+</html>
