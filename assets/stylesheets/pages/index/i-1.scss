@@ -145,7 +145,17 @@
 		overflow-y: visible;
 	    	.home-page__products{
 	    		padding-left: 0;
+	    		.create-book{
+	    			padding: 40px 0 20px 20px;
+    				-ms-flex: 0 0 35%;
+				    flex: 0 0 35%;
+				    max-width: 35%;
+				}
 	    		.home-page__filter{
+	    			-ms-flex: 0 0 65%;
+				    flex: 0 0 65%;
+				    max-width: 65%;
+				    padding: 40px 0 20px 0;
 				    > section{
 				    	> button{
 				    		margin-bottom: 10px;

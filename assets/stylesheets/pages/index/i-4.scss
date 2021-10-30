@@ -1,0 +1,103 @@
+.list_user{
+	padding: 40px 20px;
+	> h2{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	> article{
+		@include flexbox;
+		@include justify-content(space-between);
+		flex-wrap: wrap;
+	}
+}
+._user--item{
+	-ms-flex: 0 0 31%;
+    flex: 0 0 31%;
+    max-width: 31%;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.5);
+    > ul{
+    	margin-left: 20px;
+    }
+}
+._user--name{
+	font-weight: 600;
+	font-size: 20px;
+}
+._user--borrow_book{
+	text-decoration: underline;
+	margin-left: 20px;	
+}
+.btn-edit_user{
+	text-align: right;
+	> button{
+		padding: 2px 20px;
+		margin-top: 5px;
+		border-radius: 5px;
+		outline: none;
+	    box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+	    -webkit-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+	    -moz-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+	    background: #7158e2;
+	    color: #ffffff;
+	    border: 1px solid #7158e2;
+	    &:active{
+	        box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+	        -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+	        -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+	    }
+	    &:hover{
+	    	background: #ffffff;
+	    	color: #7158e2;
+	    }
+	}
+}
+
+.create-user{
+	> button{
+		padding: 2px 20px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		outline: none;
+	    box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+	    -webkit-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+	    -moz-box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.24);
+	    background: #1289A7;
+	    color: #ffffff;
+	    border: 1px solid #1289A7;
+	    &:active{
+	        box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+	        -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+	        -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.07);
+	    }
+	    &:hover{
+	    	background: #ffffff;
+	    	color: #1289A7;
+	    }
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+	._user--item{
+		-ms-flex: 0 0 48%;
+	    flex: 0 0 48%;
+	    max-width: 48%;
+	    margin-bottom: 20px;
+	    > ul{
+	    	margin-left: 20px;
+	    }
+	}
+}
+@media only screen and (max-width:767px){
+	._user--item{
+		-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    margin-bottom: 20px;
+	}
+}

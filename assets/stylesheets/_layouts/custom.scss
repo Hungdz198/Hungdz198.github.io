@@ -224,7 +224,9 @@ ul{
 }
 
 .edit_card,.create_card,
-.create-borrow_book{
+.create-borrow_book,
+.edit_user,
+.create_user{
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -269,10 +271,20 @@ ul{
     max-width: 50%;
     padding: 2px 20px;
 }
-.input-contact label{
+.input-book{
+	position: relative;
+    margin-bottom: 30px;
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+    padding: 4px 20px;
+}
+.input-contact label,
+.input-book label{
     width: 100%;
 }
-.input-contact input{
+.input-contact input,
+.input-book input{
     width: 100%;
     outline: none;
     border: none;
@@ -280,7 +292,8 @@ ul{
     background: none;
     padding-top: 20px;
 }
-.input-contact section{
+.input-contact section,
+.input-book section{
     position: absolute;
     top: 0;
     left: 20px;
@@ -376,7 +389,11 @@ ul{
 		opacity: 1;
 		display: block;
 	}
-	.edit_card > form{
+	.edit_card > form,
+	.create-borrow_book > form,
+	.create_card > form,
+	.edit_user > form,
+	.create_user > form{
 		width: 80%;
 	}
 	.input-contact,
